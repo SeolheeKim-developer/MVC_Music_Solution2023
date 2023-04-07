@@ -1,0 +1,17 @@
+﻿<!-- Modal-->
+<div class="modal fade" id="addInstrumentModal" tabindex="-1" role="dialog" aria-labelledby="InstrumentModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="InstrumentmyModalLabel">Add New Instrument</h4>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                @{
+                    var m = new MVC_Music.Models.Instrument();
+                    <partial name="_InstrumentCreate" model="m" />
+                }
+            </div>
+        </div>
+    </div>
+</div>
